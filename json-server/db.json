@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "Tanzeem Alam",
+      "email": "tanzeemalam755@gmail.com",
+      "department": "Product departmentalization",
+      "phone": "999999999",
+      "gender": "Male",
+      "status": "Worker",
+      "date": "2021-04-05T14:47",
+      "id": 1
+    },
+    {
+      "name": "Nasir",
+      "department": "Senior Developer",
+      "email": "mohdnasir123@gmail.com",
+      "phone": "9920199382",
+      "gender": "Male",
+      "date": "20/08/20",
+      "status": "Self-employee",
+      "id": 2
+    },
+    {
+      "name": "Mohammd Tanzeem",
+      "email": "mohammadtanzeem@gmail.com",
+      "department": "Customer departmentalization",
+      "phone": "9088379030",
+      "gender": "Male",
+      "status": "Employee",
+      "date": "2021-03-31T13:15",
+      "id": 3
+    },
+    {
+      "name": "Alen mark",
+      "email": "alenmark@gmail.com",
+      "department": "Process departmentalization",
+      "phone": "29298883000",
+      "gender": "Male",
+      "status": "Worker",
+      "date": "2021-03-29T14:19",
+      "id": 4
+    },
+    {
+      "name": "Sanu Kumar",
+      "email": "sanu@gmail.com",
+      "department": "Customer departmentalization",
+      "phone": "9085525255",
+      "gender": "Male",
+      "status": "Worker",
+      "date": "2021-03-29T14:26",
+      "id": 5
+    },
+    {
+      "name": "Rahul Saxena",
+      "email": "rahulsaxena@gmail.com",
+      "department": "Process departmentalization",
+      "phone": "78993839902",
+      "gender": "Male",
+      "status": "Self-employee",
+      "date": "2021-02-10T14:46",
+      "id": 6
+    }
+  ]
+}

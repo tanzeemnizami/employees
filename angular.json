@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "node_modules/font-awesome/css/font-awesome.min.css",
+               "src/styles.css"
+              ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "for-interview-crud"
+  "defaultProject": "for-interview-crud",
+  "cli": {
+    "analytics": false
+  }
 }
