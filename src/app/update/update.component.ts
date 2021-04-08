@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common/common.service';
-import { FormGroup, FormControl } from '@angular/forms';
+import {FormControl , FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,20 +11,21 @@ import { ActivatedRoute } from '@angular/router';
 export class UpdateComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, 
-              private commonService: CommonService) { }
+              private commonService: CommonService,
+              private fb: FormBuilder) { }
   alert = false;            
-  form:any = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    department: new FormControl(''),
-    phone: new FormControl(''),
-    gender: new FormControl(''),
-    status: new FormControl(''),
-    date: new FormControl('')
+  form:any = this.fb.group({
+    name: new FormControl('',Validators.required),
+    email: new FormControl('',Validators.required),
+    department: new FormControl('',Validators.required),
+    phone: new FormControl('',Validators.required),
+    gender: new FormControl('',Validators.required),
+    status: new FormControl('',Validators.required),
+    date: new FormControl('',Validators.required)
   })
   ngOnInit(): void {
     this.commonService.fatchData(this.route.snapshot.params.id).subscribe((result)=>{
-      this.form = new FormGroup({
+      this.form = this.fb.group({
         name: new FormControl(result.name),
         email:  new FormControl(result.email),
         department:  new FormControl(result.department),

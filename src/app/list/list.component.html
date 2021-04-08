@@ -48,12 +48,17 @@
           <td>{{item.date}}</td>
           <td>{{item.status}}</td>
           <td>
-            <a routerLink="/update/{{item.id}}" style="color: orange; font-size: 20px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+            <a class="view" routerLink="/list/view/{{item.id}}">View</a>
+                        <a routerLink="/update/{{item.id}}" style="color: orange; 
+                                                       font-size: 20px;
+                                                       margin-left: 10px;"
+                                                       ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
             <a (click)="removeUser(item.id)" style="color: rgb(204, 4, 4); 
                                                     font-size: 20px; 
                                                     margin-left: 10px;
-                                                    cursor: pointer;"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-          </td>
+                                                    cursor: pointer;">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i></a>
+        </td>
         </tr>
        
       </tbody>

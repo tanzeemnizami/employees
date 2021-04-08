@@ -23,6 +23,15 @@ export class AddComponent implements OnInit {
   });
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required,Validators.email]),
+      department: new FormControl('', Validators.required),
+      phone: new FormControl('', Validators.required),
+      gender: new FormControl('', Validators.required),
+      status: new FormControl('', Validators.required),
+      date: new FormControl('', Validators.required)
+    });
 
   }
   submit() {
@@ -30,6 +39,7 @@ export class AddComponent implements OnInit {
       console.log(result);
       this.alert = true
       this.form.reset();
+      
     })
     
   }

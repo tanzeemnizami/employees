@@ -1,0 +1,48 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="card" style="width: 70%; 
+                             margin: auto;
+                             background-color: rgb(238, 237, 237);
+                             box-shadow: 3px 3px 6px 2px rgb(206, 205, 205);">
+        <div class="card-title">
+            <h3>Employee Detail</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <label>Employee Name:</label>
+                <p> {{viewData.name}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Email:</label>
+                <p> {{viewData.email}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Department:</label>
+                <p> {{viewData.department}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Phone No.</label>
+                <p> {{viewData.phone}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Gender:</label>
+                <p> {{viewData.gender}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Status:</label>
+                <p> {{viewData.status}}</p>
+            </div>
+            <div class="row">
+                <label>Employee Joining Date:</label>
+                <p> {{viewData.date}}</p>
+            </div>
+            
+            
+            
+
+        </div>
+        <div class="card-footer">
+            <a routerLink="/list">Back to Home</a>
+        </div>
+    </div>
+
+</div>

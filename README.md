@@ -1,27 +1,35 @@
-# ForInterviewCrud
+..................Overflow.................................
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Development server
+Employees Project for interview purpos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+.............installation....................................
+1. install nodeJS https://nodejs.org/en/
+2. check node (node --v) install or not in your CLI. version 12.18.3
+3. after node intall npm automaically install in your system.
+4. check nmp (npm --v) install or not in your CLI.
+5. install angular (npm install -global @angular/cli --save). 
+6. check angular (ng --version) in your CLI. version 11.0.5
+7. install bootstrap (npm install bootstrap --save) CLI. then include angular.json file
+8. install jquery (npm install jquery --save) CLI. then include angular.json file
+9. install font-awesome (npm install font-awesome --save) CLI. then include angular.json file
+10. install json (npm install json --save) CLI. then run (json-server --watch db.json)
 
-## Code scaffolding
+............create project...................................
+1. ng new for-interview-crud
+-ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. create component
+-list component (ng g c list) CLI.
+-add component (ng g c add) CLI.
+-update component (ng g c update) CLI.
+-view component (ng g c view) CLI.
 
-## Build
+3. create service
+-common service (ng g s common) CLI.
+-make a file db.json
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+4. create pipe
+-search pipe (ng g p search) CLI.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

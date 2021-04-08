@@ -1,0 +1,8 @@
+.view{
+    color: rgb(25, 0, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+.view:hover{
+    color: rgb(150, 149, 149);
+}

@@ -9,6 +9,7 @@ import { UpdateComponent } from './update/update.component';
 import { AddComponent } from './add/add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
+import { ViewComponent } from './view/view.component';
 
 
 
@@ -20,7 +21,8 @@ import { SearchPipe } from './search.pipe';
     ListComponent,
     UpdateComponent,
     AddComponent,
-    SearchPipe
+    SearchPipe,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
